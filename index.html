@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+<html>
 
-<script src="js/index.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brooklyn Public Library</title>
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="first">
+    <header> 
+      <p class="p1">Brooklyn Public Library</p>
+      <nav>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#favorites">Favorites</a>
+        <a class="navlink" href="#coffee">Coffee shop</a>
+        <a class="navlink" href="#contacts">Contacts</a>
+        <a class="navlink" href="#card">Library Card</a>
+        <a class="profile" href="profile"></a>
+      </nav> 
+    </header> 
+    <section id="welcome">
+      <h1>WELCOME
+        TO THE BROOKLYN
+        LIBRARY
+      </h1>
+    </section>
+  </div>
+  <section id="about">
+    <h2>About</h2>
+    <p class="about">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+    <div class="gallery">
+      <img class="gallery" src="img/image 1.png">
+      <img class="gallery" src="img/image 2.png">
+      <img class="gallery" src="img/image 3.png">
+      <img class="gallery" src="img/image 4.png">
+      <img class="gallery" src="img/image 5.png">
+    </div>
+  </section>
+  <section id="favorites">
+    <h2>Favorites</h2>
+    <p class="favorites">Pick favorites of season</p>
+    <div class="radio"><input type="radio" id="winter" name="Season" value="Winter">
+    <label for="winter">Winter</label>
+    <input type="radio" id="spring" name="Season" value="Spring">
+    <label for="winter">Spring</label>
+    <input type="radio" id="summer" name="Season" value="Summer">
+    <label for="winter">Summer</label>
+    <input type="radio" id="autumn" name="Season" value="Autumn">
+    <label for="winter">Autumn</label></div>
+    <div class="table">
+      <div class="pick1">
+        <h3>Staff Picks</h3>
+        <h4> THE BOOK EATERS</h4>
+        <h4>By Sunyi Dean</h4>
+        <p class="description">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+        <button class="buy">Buy</button>
+      </div>
+      <div class="pick2">
+        <h3>Staff Picks</h3>
+        <h4>CACKLE</h4>
+        <h4>By Rachel Harrison</h4>
+        <p class="description">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+        <button class="buy">Buy</button>
+      </div>
+      <div class="pick3">
+        <h3>Staff Picks</h3>
+        <h4>Dante: Poet of the Secular World</h4>
+        <h4>By Erich Auerbach</h4>
+        <p class="description">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+        <button class="buy">Buy</button>
+      </div>
+      <div class="pick4">
+        <h3>Staff Picks</h3>
+        <h4>THE LAST QUEEN</h4>
+        <h4>By Clive Irving</h4>
+        <p class="description">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+        <button class="buy">Buy</button>
+      </div>
+    </div>
+  </section>
+  <section id="coffee">Coffee Shop</section>
+  <section id="contacts">Contacts</section>
+  <section id="card">LibraryCard</section>
+  <footer> 
+    <p>Privacy Policy. <span>&copy; 
+      2019 Copyright</span></p> 
+  </footer> 
 </body>
+
 </html>
