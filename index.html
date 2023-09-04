@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Brooklyn Public Library</title>
-  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="/css/main.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -22,10 +22,11 @@
       </nav> 
     </header> 
     <section id="welcome">
-      <h1>WELCOME
-        TO THE BROOKLYN
-        LIBRARY
-      </h1>
+      <div class="welcome">
+        <p>WELCOME</p>
+        <p>TO THE BROOKLYN</p>
+        <p>LIBRARY</p>
+      </div>
     </section>
   </div>
   <section id="about">
@@ -41,7 +42,7 @@
   </section>
   <section id="favorites">
     <h2>Favorites</h2>
-    <p class="favorites">Pick favorites of season</p>
+    <h3>Pick favorites of season</h3>
     <div class="radio"><input type="radio" id="winter" name="Season" value="Winter">
     <label for="winter">Winter</label>
     <input type="radio" id="spring" name="Season" value="Spring">
@@ -81,12 +82,84 @@
       </div>
     </div>
   </section>
-  <section id="coffee">Coffee Shop</section>
-  <section id="contacts">Contacts</section>
-  <section id="card">LibraryCard</section>
+  <section id="coffee">
+    <h2>Coffee Shop</h2>
+    <p class="coffee">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+    <div class="menu">
+      <div class="menu0">Coffee & Tea</div>
+      <div class="menu00">Desserts & Cakes</div>
+      <div class="menu1">Cold Brew Coffee</div>
+      <div class="menu2">French Press Pot</div>      
+      <div class="menu3">Espresso</div>
+      <div class="menu4">Cappuccino</div>
+      <div class="menu5">Hot tea</div>
+      <div class="menu6">Cold tea</div>      
+      <div class="menu7">Forest Gateau</div>
+      <div class="menu8">Blue Moon</div>
+      <div class="menu9">Truffle Cake</div>
+      <div class="menu10">Chocolate Cake</div>      
+      <div class="menu11">Poet’s Dream Cake</div>
+      <div class="menu12">Pineapple Cake</div>
+    </div>
+  </section>
+  <section id="contacts">
+    <div class="contacts">
+      <div>
+        <h2>Our Contacts</h2>
+        <h3>For all Library inquiries:</h3>
+        <p>Please call (617) 730-2370</p>
+        <p>For TTY service, please call (617) 730-2370</p>
+        <p>Putterham Library: (617) 730-2385</p>
+        <h3>Senior Staff</h3>
+        <span>Library Director: </span><span>Amanda Hirst</span>
+      </div>
+      <img class="map" src="img/Map.png">
+    </div>
+  </section>
+  <section id="card">
+    <h2>Digital Library Cards</h2>
+    <div class="cards">
+      <div class="find">Find your Library card
+        <div class="body">
+          <form class="card">
+            <p>Brooklyn Public Library</p>
+            <input class="card" type="text" id="name" name="name" value="Reader's name ">
+            <input class="card" type="text" id="number" name="number" value="Card number">
+          </form>
+          <input type="submit" value="Check the card">
+        </div>
+      </div>
+      <div class="create">Get a reader card
+        <p>You will be able to see a reader card after logging into account or you can register a new account</p>
+        <button>Sign Up</button>
+        <button>Log In</button>
+      </div>
+    </div>
+  </section>
   <footer> 
-    <p>Privacy Policy. <span>&copy; 
-      2019 Copyright</span></p> 
+    <div class="top">
+      <div class="top__left">
+        <p>286 Cadman Plaza, New York,</p>
+        <p>NY 11238, United States</p>
+        <div class="social">
+          <button class="twitter"></button>
+          <button class="instagram"></button>
+          <button class="facebook"></button>
+        </div>
+      </div>
+      <div class="top__right">
+        <p>Mon - Fri</p>
+        <p>08:00 am - 07:00 pm</p>
+        <p>Sat - Sun</p>
+        <p>10:00 am - 06:00 pm</p>
+      </div>
+    </div>
+      <div class="bottom">
+        <p>2023</p>
+        <p>The Rolling Scopes School</p>
+        <p>Username</p>
+      </div>
   </footer> 
 </body>
 

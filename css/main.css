@@ -1,205 +1,372 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --sand: #BB945B;
+  --dark: #0C0C0E;
+}
+
+@font-face {
+  font-family: "Forum";
+  src: url(/fonts/Forum-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/fonts/Inter-VariableFont.ttf);
+}
+
+h2 {
+  text-align: center;
+  font-family: "Forum";
+}
 div.first {
-    background-image: url(img/Welcome.png);
-    background-attachment: fixed;
-    background-position: center center;
-  }
+  background-image: url(img/Welcome.png);
+  background-position: center center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(rgba(12, 12, 14, 1), rgba(18, 18, 21, 0.1));
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navlink {
+  padding-top: 0.938rem;
+  padding-bottom: 0.938rem;
+  margin: 1.25rem 0.938rem 1.25rem 0.938rem;
+  font-size: 1.25rem;
+  color: white;
   
-  header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    background: linear-gradient(rgba(12, 12, 14, 1), rgba(18, 18, 21, 0.1));
-  }
-  
-  nav {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .navlink {
-    padding-top: 0.938rem;
-    padding-bottom: 0.938rem;
-    margin: 1.25rem 0.938rem 1.25rem 0.938rem;
-    font-size: 1.25rem;
-    
-  }
-  
-  .p1 {
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: 1.25rem;
-    padding: 1.25rem 0 1.25rem 0;
-    font-size: 1.875rem;
-    color: white;
-    align-self: center;
-  }
-  
-  a.profile {
-    display: inline-flex;
-    align-self: center;
-    background-color: black;
-    background-image: url("icon_profile.svg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    padding: 0.875rem;
-    font-size: 0;
-  }
-  
-  #welcome {
-    min-height: 37.5rem;
-    text-align: center;
-  }
-  
-  h1{
-    position: absolute;
-    min-height: 12.5rem;
-    min-width: 37.5rem;
-    margin-top: 13.75rem;
-    background-color: black;
-    color: white;
-    white-space: pre;
-    font-size: 2.5rem;
-  }
-  
-  #about {
-    text-align: center;
-  }
-  
-  div.about {
-    text-align: center;
-  }
-  h2 {
-    position: relative;
-    background-color: white;
-    margin: auto;
-  }
-  
-  h2::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 3.125rem;
-    height: 1px;
-      background: black;
-      bottom: -20px;
-  }
-  
-  span.about {
-    margin-top: 1.25rem;
-  }
-  
-  div.gallery {
-    display: flex;
-    margin: auto;
-    max-width: 90rem;
-    overflow: auto;
-    justify-content: space-between;
-  }
-  
-  img.gallery {
-    max-width: 28.125rem;
-    height: auto;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-  }
-  
-  #favorites {
-    text-align: center;
-  }
-  
-  p.favorites {
-    text-align: left;
-  }
-  
-  div.radio {
-    position: relative;
-    display: flex;
-    background-color: white;
-    max-width: 50%;
-    justify-content: space-between;
-  }
-  
-  div.table {
-    margin-left: 20px;
-    margin-right: 60px;
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 50px 1fr;
-  }
-  
-  .pick1 {
-    border: 1px solid black;
-    max-width: 550px;
-    grid-area: 1/1/2/2;
-  }
-  .pick1::after {
-    position: relative;
-    display: inline-block;
-    content: url(img/book1.png);
-    right: -35%;
-    bottom: 25%;
-  }
-  
-  .pick2 {
-    border: 1px solid black;
-    max-width: 550px;
-    grid-area: 1/3/2/4;
-  }
-  .pick2::after {
-    position: relative;
-    display: inline-block;
-    content: url(img/book2.png);
-    right: -35%;
-    bottom: 25%;
-  }
-  .pick3 {
-    border: 1px solid black;
-    max-width: 550px;
-    grid-area: 3/1/4/2;
-  }
-  .pick3::after {
-    position: relative;
-    display: inline-block;
-    content: url(img/book3.png);
-    right: -35%;
-    bottom: 25%;
-  }
-  .pick4 {
-    border: 1px solid black;
-    max-width: 550px;
-    grid-area: 3/3/4/4;
-  }
-  .pick4::after {
-    position: relative;
-    display: inline-block;
-    content: url(img/book4.png);
-    right: -35%;
-    bottom: 25%;
-  }
-  .description {
-    max-width: 66%;
-    text-align: left;
-    margin-left: 3.5%;
-  }
-  button.buy {
-    display: block;
-    margin-left: 3.5%;
-  }
-  
-  #coffee {
-    height: 500px;
-  }
-  
-  #contacts {
-    height: 500px;
-  }
-  
-  #card {
-    height: 500px;
-  }
+}
+
+.p1 {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: 1.25rem;
+  padding: 1.25rem 0 1.25rem 0;
+  font-size: 1.875rem;
+  color: white;
+  align-self: center;
+}
+
+a.profile {
+  display: inline-flex;
+  align-self: center;
+  background-color: black;
+  background-image: url("icon_profile.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 0.875rem;
+  font-size: 0;
+}
+
+#welcome {
+  min-height: 37.5rem;
+  text-align: center;
+}
+
+div.welcome {
+  position: absolute;
+  min-height: 12.5rem;
+  min-width: 37.5rem;
+  margin-top: 13.75rem;
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+}
+
+#about {
+  text-align: center;
+}
+
+div.about {
+  text-align: center;
+}
+h2 {
+  position: relative;
+  background-color: white;
+  margin: auto;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 3.125rem;
+  height: 1px;
+	background: black;
+	bottom: -20px;
+}
+
+span.about {
+  margin-top: 1.25rem;
+}
+
+div.gallery {
+  display: flex;
+  margin: auto;
+  max-width: 90rem;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+img.gallery {
+  max-width: 28.125rem;
+  height: auto;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+#favorites {
+  text-align: center;
+}
+
+p.favorites {
+  text-align: left;
+}
+
+div.radio {
+  position: relative;
+  display: flex;
+  background-color: white;
+  max-width: 50%;
+  justify-content: space-between;
+}
+
+div.table {
+  margin-left: 20px;
+  margin-right: 60px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 50px 1fr;
+}
+
+.pick1 {
+  border: 1px solid black;
+  max-width: 550px;
+  grid-area: 1/1/2/2;
+}
+.pick1::after {
+  position: relative;
+  display: inline-block;
+  content: url(img/book1.png);
+  right: -35%;
+  bottom: 25%;
+}
+
+.pick2 {
+  border: 1px solid black;
+  max-width: 550px;
+  grid-area: 1/3/2/4;
+}
+.pick2::after {
+  position: relative;
+  display: inline-block;
+  content: url(img/book2.png);
+  right: -35%;
+  bottom: 25%;
+}
+.pick3 {
+  border: 1px solid black;
+  max-width: 550px;
+  grid-area: 3/1/4/2;
+}
+.pick3::after {
+  position: relative;
+  display: inline-block;
+  content: url(img/book3.png);
+  right: -35%;
+  bottom: 25%;
+}
+.pick4 {
+  border: 1px solid black;
+  max-width: 550px;
+  grid-area: 3/3/4/4;
+}
+.pick4::after {
+  position: relative;
+  display: inline-block;
+  content: url(img/book4.png);
+  right: -35%;
+  bottom: 25%;
+}
+.description {
+  max-width: 66%;
+  text-align: left;
+  margin-left: 3.5%;
+}
+button.buy {
+  display: block;
+  margin-left: 3.5%;
+}
+
+p.coffee {
+  text-align: center;
+}
+
+div.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr repeat(11, 1fr);
+}
+.menu0 {
+grid-area: 1/1/3/2;
+}
+.menu00 {
+grid-area: 1/3/3/4;
+}
+.menu1 {
+  grid-area: 3/1/4/2;
+}
+.menu2 {
+  grid-area: 4/1/5/2;
+}
+.menu3 {
+  grid-area: 5/1/6/2;
+}
+.menu4 {
+  grid-area: 6/1/7/2;
+}
+.menu5 {
+  grid-area: 7/1/8/2;
+}
+.menu6 {
+  grid-area: 8/1/9/2;
+}
+.menu7 {
+  grid-area: 3/3/4/4;
+}
+.menu8 {
+  grid-area: 4/3/5/4;
+}
+.menu9 {
+  grid-area: 5/3/6/4;
+}
+.menu10 {
+  grid-area: 6/3/7/4;
+}
+.menu11 {
+  grid-area: 7/3/8/4;
+}
+.menu12 {
+  grid-area: 8/3/9/4;
+}
+
+div.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+img.map {
+  position: relative;
+  margin-right: 1.25rem;
+}
+
+div.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid var(--sand);
+  width: 600px;
+  height: 386px;
+  padding: 20px 0 30px 0;
+}
+
+form.card {
+  width: 93%;
+  height: 272px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+    background-color: var(--sand);
+}
+
+input.card {
+  width: 520px;
+  height: 66px;
+  border-radius: 10px;
+}
+
+#footer {
+  color: #ffffff;  
+}
+
+div.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--dark);
+  color: white;
+}
+
+/* div.top::after {
+  content: "";
+  height: 1px;
+  width: 97%;
+  margin-left: 1.5%;
+  background: white;
+  position: relative;
+  bottom: -1px;
+} */
+
+div.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+button.twitter {
+  background-color: var(--dark);
+  background-image: url(/icons/twitter.svg);
+  background-position: center;
+  background-size: cover;
+  padding: 12px;
+  border-style: none;
+}
+button.instagram {
+  background-image: url(/icons/instagram.svg);
+  background-color: var(--dark);
+  background-position: center;
+  background-size: cover;
+  padding: 12px;
+  border-style: none;
+}
+button.facebook {
+  background-image: url(/icons/facebook.svg);
+  background-color: var(--dark);
+  background-position: center;
+  background-size: cover;
+  padding: 12px;
+  border-style: none;
+}
+
+div.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--dark);
+  color: white;
+}
