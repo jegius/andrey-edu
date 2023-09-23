@@ -1,93 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;600&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 :root {
+  --white: #FFFFFF;
+  --grey: #8E8E8E;
   --sand: #BB945B;
   --dark: #0C0C0E;
+  --black: #000000;
 }
 
-@font-face {
-  font-family: "Forum";
-  src: url(/fonts/Forum-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Inter";
-  src: url(/fonts/Inter-VariableFont.ttf);
-}
-
-h2 {
-  text-align: center;
-  font-family: "Forum";
-}
-div.first {
-  background-image: url(img/Welcome.png);
-  background-position: center center;
-}
-
-header {
+.header {
+  padding-top: 1rem;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgba(12, 12, 14, 1), rgba(18, 18, 21, 0.1));
+  text-align: center;
+  background-color: var(--dark);
+  color: var(--white);
 }
 
-nav {
+.header__nav {
+  list-style: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-right: 1.25rem;
 }
 
-.navlink {
-  padding-top: 0.938rem;
-  padding-bottom: 0.938rem;
-  margin: 1.25rem 0.938rem 1.25rem 0.938rem;
+.nav__link {
   font-size: 1.25rem;
-  color: white;
-  
+  margin: 0 1rem 0 1rem;
 }
 
-.p1 {
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: 1.25rem;
-  padding: 1.25rem 0 1.25rem 0;
+.header__logo {
   font-size: 1.875rem;
-  color: white;
-  align-self: center;
+  font-family: "Forum";
+  margin-left: 1.25rem;
 }
 
-a.profile {
-  display: inline-flex;
-  align-self: center;
-  background-color: black;
-  background-image: url("icon_profile.svg");
-  background-position: center;
+.nav__profile {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--dark);
+  background-image: url("/icons/icon_profile.svg");
   background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  padding: 0.875rem;
-  font-size: 0;
+  padding: 1rem;
 }
 
 #welcome {
-  min-height: 37.5rem;
-  text-align: center;
+  min-height: 40vw;
+  background-color: var(--black);
+  background-image: url(img/Welcome.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 2.5rem;
+  color: var(--white);
 }
 
-div.welcome {
-  position: absolute;
-  min-height: 12.5rem;
-  min-width: 37.5rem;
-  margin-top: 13.75rem;
-  background-color: black;
-  color: white;
-  font-size: 2.5rem;
+.welcome__gradient {
+  min-height: 20vw;
+  background-image: linear-gradient(rgba(12, 12, 14, 1), rgba(18, 18, 21, 0.1));  
 }
+
+.greeting {
+  min-width: min-content;
+  width: 40%;
+  padding: 2rem 9rem 2rem 9rem;
+  background-color: var(--dark);
+  text-align: center;
+  font-family: "Forum";
+    line-height: 1.25;
+   }
 
 #about {
   text-align: center;
@@ -98,7 +109,7 @@ div.about {
 }
 h2 {
   position: relative;
-  background-color: white;
+  background-color: var(--white);
   margin: auto;
 }
 
@@ -142,7 +153,7 @@ p.favorites {
 div.radio {
   position: relative;
   display: flex;
-  background-color: white;
+  background-color: var(--white);
   max-width: 50%;
   justify-content: space-between;
 }
@@ -318,7 +329,7 @@ div.top {
   flex-direction: row;
   justify-content: space-between;
   background-color: var(--dark);
-  color: white;
+  color: var(--white);
 }
 
 /* div.top::after {

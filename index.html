@@ -5,30 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Brooklyn Public Library</title>
-  <link href="/css/main.css" rel="stylesheet" type="text/css" />
+  <link href="./css/main.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="first">
-    <header> 
-      <p class="p1">Brooklyn Public Library</p>
-      <nav>
-        <a class="navlink" href="#about">About</a>
-        <a class="navlink" href="#favorites">Favorites</a>
-        <a class="navlink" href="#coffee">Coffee shop</a>
-        <a class="navlink" href="#contacts">Contacts</a>
-        <a class="navlink" href="#card">Library Card</a>
-        <a class="profile" href="profile"></a>
-      </nav> 
-    </header> 
-    <section id="welcome">
-      <div class="welcome">
-        <p>WELCOME</p>
-        <p>TO THE BROOKLYN</p>
-        <p>LIBRARY</p>
-      </div>
-    </section>
-  </div>
+  <header class="header"> 
+    <span class="header__logo">Brooklyn Public Library</span>
+    <nav class="header__nav">
+      <ul class="header__nav">
+        <li class="nav__link"><a href="#about">About</a>
+        <li class="nav__link"><a href="#favorites">Favorites</a>
+        <li class="nav__link"><a href="#coffee">Coffee Shop</a>
+        <li class="nav__link"><a href="#contacts">Contacts</a>
+        <li class="nav__link"><a href="#card">Library Card</a>
+      </ul>
+      <button class="nav__profile"></button>        
+    </nav>
+  </header>
+  <section id="welcome">
+    <div class="welcome__gradient"></div>
+    <div class="greeting">WELCOME TO THE BROOKLYN LIBRARY</div>
+  </section>
   <section id="about">
     <h2>About</h2>
     <p class="about">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
